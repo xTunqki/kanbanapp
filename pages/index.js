@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
+import Card from "../components/Card";
 import Navbar from "../components/Navbar";
 
 export default function Home() {
@@ -13,15 +14,12 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar title="Product Roadmap" />
-      <div class="flex flex-wrap justify-around">
-        <div className="bg-white shadow p-4 m-2 border-2 rounded border-red-300">
-        <div class="border-2 border-red-300 rounded w-fit">
-          <h3 className="text-[12px] px-2 font-medium text-red-400">Group Task 1</h3>
-        </div>
-          <div className="text-gray-700 font-bold text-xs pt-2">
-            January - March
-          </div>
-        </div>
+
+      <div class="flex flex-wrap justify-evenly">
+        <Card />
+        <Card />
+        <Card />
+        <Card />
       </div>
     </>
   );
